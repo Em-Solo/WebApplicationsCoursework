@@ -30,5 +30,11 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  app_title: 'MyMovies'
-  app_description: 'A place to keep a record of all the movies you have watched.'
+  app_title: MyMovies
+  app_description: A place to keep a record of all the movies you have watched.
+
+  home:
+    home:
+      title: MyMovies
+      welcome: Welcome to the MyMovies site!
+      intro_msg: If you like keeping track of all the movies you've watched and your opinion on the movie then this website is for you. In this website you can write down any movie you see and add a review for it at the same time. This way you can return to this site to check if you have alredy seen a movie and see your thoughts on it through the review you initialy wrote.
