@@ -30,4 +30,5 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  app_title: 'MyMovies'
+  app_description: 'A place to keep a record of all the movies you have watched.'
