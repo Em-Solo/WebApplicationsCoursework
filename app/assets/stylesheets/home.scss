@@ -1,3 +1,48 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+
+  //style for home page
+  h1#hh1{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 65px;
+    text-align: center;
+  }
+
+  p#hp1, p#hp2{
+    font-size: 20px;
+    text-align: center;
+  }
+
+  //class for centering picture
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    max-width: 100%;
+  }
+
+  //style for contact page
+  h1#ch1{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-size: 65px;
+  }
+
+  p#cp1 {
+    font-size: 20px;
+  }
+
+  form label, form input {
+    display: block;
+    margin: 10px;
+  }
+
+  form input {
+    color: black;
+  }
+
+}

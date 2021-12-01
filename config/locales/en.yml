@@ -38,3 +38,21 @@ en:
       title: MyMovies
       welcome: Welcome to the MyMovies site!
       intro_msg: If you like keeping track of all the movies you have watched and your opinion on the movie then this website is for you. In this website you can write down any movie you see and add a review for it at the same time. This way you can return to this site to check if you have alredy seen a movie and see your thoughts on it through the review you initialy wrote.
+
+    contact:
+      title: Contact Us
+      contact_us: Complete the following form in case you want to get in touch with us.
+
+      name: "Name:"
+      enter_name: Enter your name
+      email: "Email:"
+      enter_email: Enter your email address
+      telephone: "Telephone:"
+      enter_telephone: Enter your telephone number
+      message: "Message:"
+      enter_message: What do you want to say?
+      submit: Contact Us
+
+    request_contact:
+      no_email: You must supply an email adress
+      email_sent: Thank you. We will be in touch shortly.
