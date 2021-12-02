@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  genre: MyString
+  runtime: 1
+  watch_date: 2021-12-02
+  score: 1
+
+two:
+  title: MyString
+  genre: MyString
+  runtime: 1
+  watch_date: 2021-12-02
+  score: 1
