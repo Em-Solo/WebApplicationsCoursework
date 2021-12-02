@@ -1,14 +1,14 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
+  title: Deadpool 1
   genre: MyString
   runtime: 1
   watch_date: 2021-12-02
   score: 1
 
 two:
-  title: MyString
+  title: Deadpool 2
   genre: MyString
   runtime: 1
   watch_date: 2021-12-02
