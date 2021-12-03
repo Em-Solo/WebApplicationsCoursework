@@ -1,7 +1,8 @@
-%h1 Editing movie
+.moviescenter
+  %h1= t('.edit')
 
-= render 'form'
+  = render 'form'
 
-= link_to 'Show', @movie
-\|
-= link_to 'Back', movies_path
+  = link_to 'Show', @movie
+  \|
+  = link_to 'Back', movies_path

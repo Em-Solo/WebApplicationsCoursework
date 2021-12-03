@@ -1,29 +1,30 @@
-%h1 My Movies
+.moviescenter
+  %h1= t(".mymovies")
 
-%table
-  %thead
-    %tr
-      %th Title
-      %th Genre
-      %th Runtime
-      %th Watch date
-      %th Score
-      %th
-      %th
-      %th
-
-  %tbody
-    - @movies.each do |movie|
+  %table
+    %thead
       %tr
-        %td= movie.title
-        %td= movie.genre
-        %td= movie.runtime
-        %td= movie.watch_date
-        %td= movie.score
-        %td= link_to 'Show', movie
-        %td= link_to 'Edit', edit_movie_path(movie)
-        %td= link_to 'Destroy', movie, method: :delete, data: { confirm: 'Are you sure?' }
+        %th= t('.title')
+        %th= t('.genre')
+        %th= t('.runtime')
+        %th= t('.watch_date')
+        %th= t('.score')
+        %th
+        %th
+        %th
 
-%br
+    %tbody
+      - @movies.each do |movie|
+        %tr
+          %td= movie.title
+          %td= movie.genre
+          %td= movie.runtime
+          %td= movie.watch_date
+          %td= movie.score
+          %td= link_to 'Show', movie
+          %td= link_to 'Edit', edit_movie_path(movie)
+          %td= link_to 'Destroy', movie, method: :delete, data: { confirm: t('.sure') }
 
-= link_to 'New Movie', new_movie_path
+  %br
+
+  = link_to 'New Movie', new_movie_path

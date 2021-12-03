@@ -1,21 +1,22 @@
-%p#notice= notice
+.moviescenter
+  %p#notice= notice
 
-%p
-  %b Title:
-  = @movie.title
-%p
-  %b Genre:
-  = @movie.genre
-%p
-  %b Runtime:
-  = @movie.runtime
-%p
-  %b Watch date:
-  = @movie.watch_date
-%p
-  %b Score:
-  = @movie.score
+  %p
+    %b= t('.title')
+    = @movie.title
+  %p
+    %b= t('.genre')
+    = @movie.genre
+  %p
+    %b= t('.runtime')
+    = @movie.runtime
+  %p
+    %b= t('.watch_date')
+    = @movie.watch_date
+  %p
+    %b= t('.score')
+    = @movie.score
 
-= link_to 'Edit', edit_movie_path(@movie)
-\|
-= link_to 'Back', movies_path
+  = link_to 'Edit', edit_movie_path(@movie)
+  \|
+  = link_to 'Back', movies_path
