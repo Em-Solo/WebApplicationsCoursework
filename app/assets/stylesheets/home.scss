@@ -25,6 +25,7 @@ body {
     max-width: 100%;
   }
 
+  //class for centering contact page
   .centerform {
     margin: 0 auto;
     width: 50vw;
@@ -46,6 +47,7 @@ body {
   form label, form input {
     display: block;
     margin: 10px;
+    max-width: 100%;
   }
 
   form input {

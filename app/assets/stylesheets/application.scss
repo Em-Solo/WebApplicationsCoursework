@@ -23,9 +23,16 @@ $letter_color: #f0e1c7;
 
 body{
   font-family: $font;
-  background-color: $backround_color;
+
+  //background-color: $backround_color;
+  background-image: image_url("app_backround.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw 100vh;
+
+  min-height: 100vh;
+
   color: $letter_color;
-  margin: 15px;
   padding: 10px;
 }
 
