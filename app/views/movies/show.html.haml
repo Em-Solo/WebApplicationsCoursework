@@ -17,6 +17,8 @@
     %b= t('.score')
     = @movie.score
 
-  = link_to 'Edit', edit_movie_path(@movie)
+  = link_to t('.addreview'), new_review_path(movie_id: @movie)
   \|
-  = link_to 'Back', movies_path
+  = link_to t('.edit'), edit_movie_path(@movie)
+  \|
+  = link_to t('.back'), movies_path
