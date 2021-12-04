@@ -53,6 +53,7 @@ class ReviewsController < ApplicationController
     @review.destroy
     respond_to do |format|
       format.html { redirect_to reviews_url, notice: I18n.t('reviews.destroy.notice_d') }
+      format.js   { flash[:notice] = I18n.t('reviews.destroy.notice_d') }
       format.json { head :no_content }
     end
   end

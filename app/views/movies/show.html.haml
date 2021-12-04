@@ -23,12 +23,12 @@
   %table
     %tbody
       - @movie.reviews.each do |review|
-        %tr
+        %tr{id: "review_#{review.id}"}
           %td= review.content
           %td= link_to t('.show'), review
           %td= link_to t('.edit'), edit_review_path(review)
-          %td= link_to t('.destroy'), review, :method => :delete, :data => {:confirm => 'Are you sure?'}
+          %td= link_to t('.destroy'), review, :method => :delete, :data => {:confirm => t('.sure')}, :remote => true
 
   %p= link_to t('.addreview'), new_review_path(movie_id: @movie)
-  
+
   %p= link_to t('.back'), movies_path

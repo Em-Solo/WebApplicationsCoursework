@@ -72,6 +72,10 @@ en:
     destroy:
       notice_d: "Movie was successfully destroyed."
 
+    form:
+      prohibited: "prohibited this movie from being saved"
+      save: "Save"
+
     edit:
       header: "Editing movie"
       show: "Show"
@@ -103,6 +107,7 @@ en:
       show: "Show"
       edit: "Edit"
       destroy: "Destroy"
+      sure: "Are you sure?"
 
   reviews:
     create:
@@ -113,6 +118,10 @@ en:
 
     destroy:
       notice_d: "Movie was successfully destroyed."
+
+    form:
+      prohibited: "prohibited this review from being saved"
+      save: "Save"
 
     edit:
       header: "Editing Review"

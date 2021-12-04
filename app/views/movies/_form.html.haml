@@ -2,7 +2,7 @@
   = form_for @movie do |f|
     - if @movie.errors.any?
       #error_explanation
-        %h2= "#{pluralize(@movie.errors.count, "error")} prohibited this movie from being saved:"
+        %h2= "#{pluralize(@movie.errors.count, "error")} #{t('.prohibited')}"
         %ul
           - @movie.errors.full_messages.each do |message|
             %li= message
@@ -23,4 +23,4 @@
       = f.label :score
       = f.number_field :score
     .actions
-      = f.submit 'Save'
+      = f.submit t('.save')
