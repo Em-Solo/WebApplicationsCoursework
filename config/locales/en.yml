@@ -38,6 +38,11 @@ en:
   reviews: "Reviews"
   contact: "Contact Us"
 
+  profile: "Profile"
+  logout: "Log Out"
+  login: "Log In"
+  sign_up: "Sign Up"
+
   home:
     home:
       title: "MyMovies"
