@@ -9,7 +9,7 @@
   .field
     = f.label :movie
     %p= @review.movie.title
-    = f.hidden_field :note_id, value: @review.movie.id
+    = f.hidden_field :movie_id, value: @review.movie.id
   .field
     = f.label :content
     = f.text_area :content

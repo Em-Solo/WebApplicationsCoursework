@@ -35,6 +35,7 @@ en:
 
   home: "Home"
   movies: "Movies"
+  reviews: "Reviews"
   contact: "Contact Us"
 
   home:
@@ -72,7 +73,9 @@ en:
       notice_d: "Movie was successfully destroyed."
 
     edit:
-      edit: "Editing movie"
+      header: "Editing movie"
+      show: "Show"
+      back: "Back"
 
     index:
       mymovies: "My Movies"
@@ -84,7 +87,8 @@ en:
       sure: "Are you sure?"
 
     new:
-      newmovie: "New Movie"
+      header: "New Movie"
+      back: "Back"
 
     show:
       title: "Title:"
@@ -95,6 +99,10 @@ en:
       addreview: "Add Review"
       edit: "Edit"
       back: "Back"
+      reviews: "Reviews:"
+      show: "Show"
+      edit: "Edit"
+      destroy: "Destroy"
 
   reviews:
     create:
@@ -105,3 +113,23 @@ en:
 
     destroy:
       notice_d: "Movie was successfully destroyed."
+
+    edit:
+      header: "Editing Review"
+      show: "Show"
+      back: "Back"
+
+    index:
+      listing: "Listing Reviews"
+      explanation: "All your reviews in a place. Move to the movie of the review, throught the 'To Movie' button, for any modifications."
+      movie: "Movie"
+      content: "Content"
+      redirect: "To The Movie"
+
+    new:
+      header: "New Review"
+      back: "Back"
+
+    show:
+      edit: "Edit"
+      back: "Back"

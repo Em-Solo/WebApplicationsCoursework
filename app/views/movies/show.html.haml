@@ -17,8 +17,18 @@
     %b= t('.score')
     = @movie.score
 
-  = link_to t('.addreview'), new_review_path(movie_id: @movie)
-  \|
-  = link_to t('.edit'), edit_movie_path(@movie)
-  \|
-  = link_to t('.back'), movies_path
+  %p= link_to t('.edit'), edit_movie_path(@movie)
+
+  %p= t('.reviews')
+  %table
+    %tbody
+      - @movie.reviews.each do |review|
+        %tr
+          %td= review.content
+          %td= link_to t('.show'), review
+          %td= link_to t('.edit'), edit_review_path(review)
+          %td= link_to t('.destroy'), review, :method => :delete, :data => {:confirm => 'Are you sure?'}
+
+  %p= link_to t('.addreview'), new_review_path(movie_id: @movie)
+  
+  %p= link_to t('.back'), movies_path

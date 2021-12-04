@@ -7,6 +7,6 @@
   %b Content:
   = @review.content
 
-= link_to 'Edit', edit_review_path(@review)
+= link_to t('.edit'), edit_review_path(@review)
 \|
-= link_to 'Back', reviews_path
+= link_to t('.back'), @review.movie

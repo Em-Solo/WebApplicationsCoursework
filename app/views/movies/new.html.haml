@@ -1,6 +1,6 @@
 .moviescenter
-  %h1= t('.newmovie')
+  %h1= t('.header')
 
   = render 'form'
 
-  = link_to 'Back', movies_path
+  = link_to t('.back'), movies_path

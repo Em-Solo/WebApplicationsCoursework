@@ -1,10 +1,12 @@
-%h1 Listing reviews
+%h1= t('.listing')
+
+%p= t('.explanation')
 
 %table
   %thead
     %tr
-      %th Movie
-      %th Content
+      %th= t('.movie')
+      %th= t('.content')
       %th
       %th
       %th
@@ -14,10 +16,6 @@
       %tr
         %td= review.movie.title
         %td= review.content
-        %td= link_to 'Show', review
-        %td= link_to 'Edit', edit_review_path(review)
-        %td= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' }
+        %td= link_to t('.redirect'), review.movie
 
 %br
-
-= link_to 'New Review', new_review_path
