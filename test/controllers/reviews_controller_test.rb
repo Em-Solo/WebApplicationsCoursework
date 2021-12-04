@@ -3,6 +3,7 @@ require 'test_helper'
 class ReviewsControllerTest < ActionDispatch::IntegrationTest
   setup do
     @review = reviews(:one)
+    @movie = movies(:one)
   end
 
   test "should get index" do
@@ -11,7 +12,7 @@ class ReviewsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get new" do
-    get new_review_url
+    get new_review_url, params: {review:{movie_id:@movie.id}}
     assert_response :success
   end
 

@@ -22,7 +22,7 @@ class ReviewsController < ApplicationController
 
   # POST /reviews or /reviews.json
   def create
-    @review = @movie.reviews.new(reviews_params)
+    @review = @movie.reviews.new(review_params)
 
     respond_to do |format|
       if @review.save
