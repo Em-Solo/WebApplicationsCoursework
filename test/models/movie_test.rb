@@ -2,6 +2,10 @@ require 'test_helper'
 
 class MovieTest < ActiveSupport::TestCase
 
+  setup do
+    @user = users(:one)
+  end
+
   test 'should not save empty movie' do
     movie = Movie.new
 
@@ -9,7 +13,7 @@ class MovieTest < ActiveSupport::TestCase
     refute movie.valid?
   end
 
-  test 'should save valid note' do
+  test 'should save valid movie' do
     movie = Movie.new
 
     movie.title = 'Home Alone'
@@ -17,6 +21,7 @@ class MovieTest < ActiveSupport::TestCase
     movie.runtime = 100
     movie.watch_date = '03/12/2021'
     movie.score = 66
+    movie.user = @user
 
     movie.save
     assert movie.valid?
@@ -29,6 +34,7 @@ class MovieTest < ActiveSupport::TestCase
     movie1.runtime = 80
     movie1.watch_date = '02/12/2021'
     movie1.score = 85
+    movie1.user = @user
     movie1.save
     assert movie1.valid?
 
@@ -38,6 +44,7 @@ class MovieTest < ActiveSupport::TestCase
     movie2.runtime = 80
     movie2.watch_date = '02/12/2021'
     movie2.score = 85
+    movie2.user = @user
     movie2.save
     refute movie2.valid?
   end

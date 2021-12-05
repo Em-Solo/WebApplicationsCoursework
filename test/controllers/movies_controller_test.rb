@@ -1,8 +1,12 @@
 require 'test_helper'
 
 class MoviesControllerTest < ActionDispatch::IntegrationTest
+  include Devise::Test::IntegrationHelpers
+
   setup do
     @movie = movies(:one)
+    @user = users(:one)
+    sign_in @user
   end
 
   test "should get index" do
