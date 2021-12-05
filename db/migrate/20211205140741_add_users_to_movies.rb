@@ -1,4 +1,4 @@
-class AddUsersToNotes < ActiveRecord::Migration[5.2]
+class AddUsersToMovies < ActiveRecord::Migration[5.2]
   def up
     add_reference :movies, :user, index: true
     Movie.reset_column_information
