@@ -1,7 +1,8 @@
-%h1= t('.header')
+.reviewscenter
+  %h1= t('.header')
 
-= render 'form'
+  = render 'form'
 
-= link_to t('.show'), @review
-\|
-= link_to t('.back'), @review.movie
+  = link_to t('.show'), @review
+  \|
+  = link_to t('.back'), @review.movie

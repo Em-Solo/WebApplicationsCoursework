@@ -1,21 +1,22 @@
-%h1= t('.listing')
+.reviewscenter
+  %h1= t('.listing')
 
-%p= t('.explanation')
+  %p= t('.explanation')
 
-%table
-  %thead
-    %tr
-      %th= t('.movie')
-      %th= t('.content')
-      %th
-      %th
-      %th
-
-  %tbody
-    - @reviews.each do |review|
+  %table
+    %thead
       %tr
-        %td= review.movie.title
-        %td= review.content
-        %td= link_to t('.redirect'), review.movie
+        %th= t('.movie')
+        %th= t('.content')
+        %th
+        %th
+        %th
 
-%br
+    %tbody
+      - @reviews.each do |review|
+        %tr
+          %td= review.movie.title
+          %td= review.content
+          %td= link_to t('.redirect'), review.movie
+
+  %br

@@ -1,26 +1,25 @@
-.moviescenter
-  = form_for @movie do |f|
-    - if @movie.errors.any?
-      #error_explanation
-        %h2= "#{pluralize(@movie.errors.count, "error")} #{t('.prohibited')}"
-        %ul
-          - @movie.errors.full_messages.each do |message|
-            %li= message
+= form_for @movie do |f|
+  - if @movie.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@movie.errors.count, "error")} #{t('.prohibited')}"
+      %ul
+        - @movie.errors.full_messages.each do |message|
+          %li= message
 
-    .field
-      = f.label :title
-      = f.text_field :title
-    .field
-      = f.label :genre
-      = f.text_field :genre
-    .field
-      = f.label :runtime
-      = f.number_field :runtime
-    .field
-      = f.label :watch_date
-      = f.date_select :watch_date
-    .field
-      = f.label :score
-      = f.number_field :score
-    .actions
-      = f.submit t('.save')
+  .field
+    = f.label :title
+    = f.text_field :title
+  .field
+    = f.label :genre
+    = f.text_field :genre
+  .field
+    = f.label :runtime
+    = f.number_field :runtime
+  .field
+    = f.label :watch_date
+    = f.date_select :watch_date
+  .field
+    = f.label :score
+    = f.number_field :score
+  .actions
+    = f.submit t('.save')

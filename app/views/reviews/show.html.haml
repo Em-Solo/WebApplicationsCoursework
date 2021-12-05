@@ -1,10 +1,11 @@
-%p
-  %b Movie:
-  = @review.movie.title
-%p
-  %b Content:
-  = @review.content
+.reviewscenter
+  %p
+    %b Movie:
+    = @review.movie.title
+  %p
+    %b Content:
+    = @review.content
 
-= link_to t('.edit'), edit_review_path(@review)
-\|
-= link_to t('.back'), @review.movie
+  = link_to t('.edit'), edit_review_path(@review)
+  \|
+  = link_to t('.back'), @review.movie

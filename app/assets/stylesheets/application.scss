@@ -18,26 +18,9 @@
 @import "bootstrap";
 
 $font: Arial, Helvetica, sans-serif;
-$backround_color: #2a278c;
 $letter_color: #f0e1c7;
 
-body{
-  font-family: $font;
-
-  //background-color: $backround_color;
-  background-image: image_url("app_backround.jpeg");
-  //background-repeat: no-repeat;
-  //background-position: center;
-  //background-size: 100vw 100vh;
-
-  min-height: 100vh;
-
-  color: $letter_color;
-  padding: 10px;
-}
-
-//navbar style
-/* Add a black background color to the top navigation */
+//navbar styling
 .topnav {
   background-color: #01001c;
   overflow: hidden;
@@ -55,30 +38,39 @@ body{
           text-decoration: none;
           font-size: 17px;
       }
+    }
 
-  }
+    a {
+      float: left;
+      font-family: $font;
+      color: $letter_color;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
 
+     &:hover {
+       background-color: #ddd;
+       color: black;
+     }
+   }
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+//main body styling
+body{
+  font-family: $font;
 
-  //&:hover {}
+  //background-color: $backround_color;
+  background-image: image_url("app_backround.jpeg");
+  //background-repeat: no-repeat;
+  //background-position: center;
+  //background-size: 100vw 100vh;
+
+  //min-height: 100vh;
+
+  //color: $letter_color;
+  padding: 10px;
 }
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-
 
 //footer styling
 p#fp1 {

@@ -17,7 +17,7 @@ body {
   }
 
   //class for centering picture
-  .center {
+  .centerimage {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -25,12 +25,12 @@ body {
     max-width: 100%;
   }
 
-  //class for centering contact page
-  .centerform {
+  //class for centering contact page and home page
+  .centerhome {
     margin: 0 auto;
     width: 50vw;
     background-color: white;
-    padding: 50px
+    padding: auto;
   }
 
   //style for contact page
