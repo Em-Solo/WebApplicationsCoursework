@@ -1,7 +1,16 @@
 .centerhome
-  %h1#hh1= t('.title')
-  %p#hp1= t('.welcome')
+    %h1#hh1= t('.title')
+    %p#hp1.darkbackround= t('.welcome')
 
-  %p#hp2= t('.intro_msg')
+    %p#hp2.darkbackround= t('.intro_msg')
 
-  %img.centerimage{:src => image_url("homepage_image.jpg")}/
+    %h1#hh2= t('.movies')
+    %p#hp3.darkbackround= t('.movies_exp')
+
+    %h1#hh3= t('.reviews')
+    %p#hp4.darkbackround= t('.reviews_exp')
+
+    %h1#hh4= t('.contactus')
+    %p#hp5.darkbackround= t('.contactus_exp')
+
+    %img.centerimage{:src => image_url("homepage_image.jpg")}/

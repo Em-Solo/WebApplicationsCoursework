@@ -15,9 +15,10 @@
     %b= t('.score')
     = @movie.score
 
-  %p= link_to t('.edit'), edit_movie_path(@movie)
+  %p= button_to t('.edit'), edit_movie_path(@movie), :method => :get
 
-  %p= t('.reviews')
+  %p
+    %b= t('.reviews')
   %table
     %tbody
       - @movie.reviews.each do |review|
@@ -27,6 +28,6 @@
           %td= link_to t('.edit'), edit_review_path(review)
           %td= link_to t('.destroy'), review, :method => :delete, :data => {:confirm => t('.sure')}, :remote => true
 
-  %p= link_to t('.addreview'), new_review_path(movie_id: @movie)
+  %p= button_to t('.addreview'), new_review_path, :method => :get, params: {movie_id: @movie.id}
 
   %p= link_to t('.back'), movies_path

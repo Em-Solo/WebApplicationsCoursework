@@ -4,7 +4,13 @@
 
 .reviewscenter {
   margin: 0 auto;
-  width: 50vw;
-  background-color: white;
+  width: 500px;
+  background-color: #fffcf1;
   padding: auto;
+  color: #36454f;
+
+  td {
+    max-width: 45ch;
+    overflow-wrap: break-word;
+  }
 }

@@ -4,17 +4,28 @@
 body {
 
   //style for home page
-  h1#hh1{
+  h1#hh1 {
     text-transform: uppercase;
     margin-bottom: 30px;
     font-size: 65px;
     text-align: center;
   }
 
-  p#hp1, p#hp2{
+  h1#hh2, h1#hh3, h1#hh4{
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  p#hp1, p#hp2, p#hp3, p#hp4, p#hp5{
     font-size: 20px;
     text-align: center;
   }
+
+  //dark backround for backrounds of paragraphs in homepage
+  .darkbackround {
+    background-color: #0e199c;
+  }
+
 
   //class for centering picture
   .centerimage {
@@ -25,29 +36,39 @@ body {
     max-width: 100%;
   }
 
-  //class for centering contact page and home page
+  //centering for the home page
   .centerhome {
     margin: 0 auto;
-    width: 50vw;
-    background-color: white;
+    width: 55vw;
     padding: auto;
   }
 
   //style for contact page
+
+  //class for centering contact page and further applying style
+  .centercontanct {
+    margin: 0 auto;
+    width: 50vw;
+    background-color: #fffcf1;
+    padding: auto;
+    color: #36454f;
+  }
+
   h1#ch1{
     text-transform: uppercase;
     margin-bottom: 30px;
     font-size: 65px;
+    overflow-wrap: break-word;
   }
 
   p#cp1 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   form label, form input {
     display: block;
     margin: 10px;
-    max-width: 100%;
+    max-width: 90%;
   }
 
   form input {

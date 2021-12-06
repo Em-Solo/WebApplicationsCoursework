@@ -17,6 +17,6 @@
         %tr
           %td= review.movie.title
           %td= review.content
-          %td= link_to t('.redirect'), review.movie
+          %td= button_to t('.redirect'), review.movie, :method => :get
 
   %br
