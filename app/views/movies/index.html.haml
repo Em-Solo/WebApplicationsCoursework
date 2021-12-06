@@ -21,10 +21,10 @@
           %td= movie.runtime
           %td= movie.watch_date
           %td= movie.score
-          %td= link_to 'Show', movie
-          %td= link_to 'Edit', edit_movie_path(movie)
-          %td= link_to 'Destroy', movie, method: :delete, data: { confirm: t('.sure') }
+          %td= link_to t('.show'), movie
+          %td= link_to t('.edit'), edit_movie_path(movie)
+          %td= link_to t('.delete'), movie, method: :delete, data: { confirm: t('.sure') }
 
   %br
 
-  = button_to 'New Movie', new_movie_path, :method => :get
+  = button_to t('.newmovie'), new_movie_path, :method => :get

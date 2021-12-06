@@ -102,6 +102,10 @@ en:
       watch_date: "Watch date"
       score: "Score"
       sure: "Are you sure?"
+      show: "Show"
+      edit: "Edit"
+      delete: "Delete"
+      newmovie: "New Movie"
 
     new:
       header: "New Movie"
@@ -119,7 +123,7 @@ en:
       reviews: "Reviews:"
       show: "Show"
       edit: "Edit"
-      destroy: "Destroy"
+      delete: "Delete"
       sure: "Are you sure?"
 
   reviews:

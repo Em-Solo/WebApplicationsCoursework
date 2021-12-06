@@ -26,7 +26,7 @@
           %td= review.content
           %td= link_to t('.show'), review
           %td= link_to t('.edit'), edit_review_path(review)
-          %td= link_to t('.destroy'), review, :method => :delete, :data => {:confirm => t('.sure')}, :remote => true
+          %td= link_to t('.delete'), review, :method => :delete, :data => {:confirm => t('.sure')}, :remote => true
 
   %p= button_to t('.addreview'), new_review_path, :method => :get, params: {movie_id: @movie.id}
 
